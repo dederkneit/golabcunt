@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+</header>
+<section id="sekcja0">
+<div id="sekcja1">
+<div id="formularz">
+<h2><center>Wprowadź dane ucznia: </center></h2>
+
+<form name="form">
+Nazwisko:     <input type="text" name="nazwisko"><br><br>
+Imię:    <input type="text" name="imie"><br><br>
+Wiek:   <input type="number" name="wiek"><br><br>
+<center><input id="przycisk" type="button" value="Wykonaj" onClick="dane(this.form)"> </center>
+</form>
+</div>
+
+<script type="text/javascript">
+var napis=" ";
+
+function dane(formularz)
+{ 
+if (formularz.nazwisko.value==""||formularz.imie.value==""||formularz.wiek.value=="");
+alert("Wprowadz dane");
+}
+
+else
+{
+napis+="<li>"+formularz.imie.value+" "+formularz.nazwisko.value+" "+formularz.wiek.value+
+"lat</li>";
+
+document.getElementById("uczen").InnerHTML=napis;
+}
+
+</script>
