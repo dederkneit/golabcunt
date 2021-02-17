@@ -1,0 +1,40 @@
+</header>
+<section id="sekcja0">
+<div id="sekcja1">
+<div id="formularz">
+<h2><center>Wprowadź datę urodzin:</center></h2>
+
+<form name="form">
+Rok: <input type="number" max="2020" min="1" name="rok"><br><br>
+Miesiąc: <input type="number" max="12" min="1">
+Dzień: <input type="number" max="31" min="1" name="dzień"><br><br>
+</center><input id="przycisk" type="button" value="oblicz" onClick="dane(this.form)"> </center>
+</form>
+</div>
+
+<script type="text/javascript">
+var napis="";
+
+function dane(formularz)
+{
+if(formularz.rok.value==""||formularz.miesiac.value""||formularz.dzien.value=="");
+alert("Wprowadź dane");
+
+else{
+var rok=(formularz.rok.value);
+var miesiac=(formularz.miesiac.value);
+var dzien=(formularz.dzien.value);
+
+var data = new Date();
+var rok2 = data.getFullYear();
+var miesiac2 = data.getMonth();
+var dzien2 = data.getDate();
+
+var data1 = new Date(rok.miesiac.dzien);
+var data2 = new Date(rok2.miesiac2.dzien2);
+
+var ilosc dni = (data2-data1)/(1000*60*60*24);
+
+document.getElementById("dzien").innerHTML="<font color="red"><b>"+ilosc_dni+"</b></font>;
+
+</script>
