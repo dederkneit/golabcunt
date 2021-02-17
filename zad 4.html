@@ -1,0 +1,25 @@
+<section id="sekcja0">
+<div id="formularz">
+<h2><center>Wprowadz dane:</center></h2>
+
+<form name="form">
+
+Nazwa szkoły: <input value="ZSZ 2 im. Powstańców Warsawy" type="text" name="nazwa" 
+size="35"><br><br>
+
+Miejscowość<input value="Mińsk Mazowiecki" type="text" name="miejscowosc" ><br><br>
+
+Kod pocztowy <input value="05-300" type="text" name="kodpocztowy"  onblur="validPostCode(this)"><br><br>
+
+Ulica <input value="Generała Sosnkowskiego type="text" name="ulica" ><br><br>
+
+Nazwa szkoły: <input value="43" type="text" name="numer"><br><br>
+
+Nazwa szkoły: <input value="224124124" type="text" name="telefon" onblur="validTelefon(this)"><br><br>
+<center>
+
+<input class="przycisk" type="reset" value="Wyczyść">
+<input class="przycisk" type="button" value="Wyślij" onClick="dane(this.form)"></center>
+
+</form>
+</div>

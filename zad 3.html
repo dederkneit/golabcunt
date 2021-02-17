@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<section id="sekcja0">
+<div id="formularz">
+<h2><center>Wprowadz dane:</center></h2>
+
+<form name="form">
+Nazwisko: <input type="text" name="nazwisko"><br><br>
+Imię: <input type="text" name="imie"><br><br>
+E-mail: <input type="mail" name="mail"><br><br>
+<center><input id="przycisk" type="button" value="Wyślij" onClick="dane(this.form)"> </center>
+</form>
+</div>
+
+<script type="text/javascript">
+var napis=" ";
+
+function dane(formularz)
+{
+if(formularz.nazwisko.value=="")
+alert("Wprowadz naziwsko");
+else if (formularz.imie.value=="")
+alert("Wprowadz imię");
+else if (formularz.mail.value=="")
+alert("Wprowadź mail");
+else{
+napis+= "<li>" +formularz.imie.value+""+formularz.nazwisko.value+" mail: "
++formularz.mail.value+" </li>";
+
+document.getElementById("dane").innerHTML=napis;
+}
+}
+</script>
